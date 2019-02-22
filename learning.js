@@ -13,13 +13,12 @@ function BubbleSort(arr) {
         for (let i = 1; i < sortedArray.length; i++) {
             if (sortedArray[i - 1] > sortedArray[i]) {
                 [sortedArray[i], sortedArray[i - 1]] = [sortedArray[i - 1], sortedArray[i]];
+                console.log('\n');
                 console.log([sortedArray[i], sortedArray[i - 1]] + ' = ' + [sortedArray[i - 1], sortedArray[i]])
-                swap = true;
                 console.log(sortedArray)
+                swap = true;
             }
-            //console.log(sortedArray);
         }
-        console.log('\n');
     }
     while (swap)
     return sortedArray;
