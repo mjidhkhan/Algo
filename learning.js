@@ -1,3 +1,6 @@
+
+arrayToSort = [15, 2, 4, 8, 6, 12, 5, 11, 3, 1, 10];
+
 /**
  * Sort an array
  * @param {*} arr 
@@ -21,7 +24,7 @@ function BubbleSort(arr) {
     return sortedArray;
 }
 console.log('\n[Bubble Sort]');
-console.log(BubbleSort([15, 2, 4, 8, 6, 12, 5, 11, 3, 1, 10]));
+console.log(BubbleSort(arrayToSort));
 
 function InsertionSort(arr) {
     var sortedArray = Array.from(arr)
@@ -38,5 +41,5 @@ function InsertionSort(arr) {
     return sortedArray;
 }
 console.log('\n[Insert Sort]');
-var result = InsertionSort([15, 2, 4, 8, 6, 12, 5, 11, 3, 1, 10])
+var result = InsertionSort(arrayToSort)
 console.log(result);
