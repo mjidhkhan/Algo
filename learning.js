@@ -15,8 +15,9 @@ function BubbleSort(arr) {
                 [sortedArray[i], sortedArray[i - 1]] = [sortedArray[i - 1], sortedArray[i]];
                 console.log([sortedArray[i], sortedArray[i - 1]] + ' = ' + [sortedArray[i - 1], sortedArray[i]])
                 swap = true;
+                console.log(sortedArray)
             }
-            console.log(sortedArray);
+            //console.log(sortedArray);
         }
         console.log('\n');
     }
